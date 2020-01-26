@@ -1,0 +1,6 @@
+按Windows+R键调出运行窗口，输入services.msc, 找到Function Discovery Provider Host服务，右键点击，点属性，将手动运行改为自动或者自动(延迟），并启动这个服务。
+同时找到Function Discovery Resource Publication服务，右键点击，点属性，将手动运行改为自动或者自动(延迟），并启动这个服务。
+找到“TCP/IP NetBIOS Helper”服务，点鼠标右键，选择“启动”。
+稍等就可以看到“TCP/IP NetBIOS Helper”已启动，查看是否可以正常使用。
+控制面板->启用或关闭windows功能->勾选smb1.0。
+然后打开网络刷新一下，就OK了。
